@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tesseract_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="Yhm-yO-ysm">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4W-Rk-Crg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="sgG-ql-t8h"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Camera" id="Ddv-Lx-LZH">
+                                        <connections>
+                                            <action selector="cameraTapped:" destination="BYZ-38-t0r" id="E0N-6u-AGt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="TzQ-tT-c7p"/>
+                                    <barButtonItem title="Photos" id="gsP-eE-dSu">
+                                        <connections>
+                                            <action selector="photosTapped:" destination="BYZ-38-t0r" id="lA7-kj-mcN"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="sgG-ql-t8h"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="sgG-ql-t8h"/>
+                                    </mask>
+                                </variation>
+                            </toolbar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Scanned Text" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BDO-Xi-Kwr">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="278" id="GPs-tA-ZWo"/>
+                                    <constraint firstAttribute="height" constant="370" id="pKK-hV-6Vb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="GPs-tA-ZWo"/>
+                                        <exclude reference="pKK-hV-6Vb"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="GPs-tA-ZWo"/>
+                                        <include reference="pKK-hV-6Vb"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OCR App using Tesseract " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDT-v1-z2E">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="AOi-mI-y0N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="AOi-mI-y0N"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="AOi-mI-y0N"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="0x5-zG-YHS">
+                                <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                                <color key="color" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lDT-v1-z2E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5Vx-xB-rNF"/>
+                            <constraint firstItem="0x5-zG-YHS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6Pl-6t-jB8"/>
+                            <constraint firstItem="0x5-zG-YHS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MYi-UR-rGg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="f4W-Rk-Crg" secondAttribute="bottom" id="bmn-kv-7yE"/>
+                            <constraint firstItem="Yhm-yO-ysm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="erv-Az-hAg"/>
+                            <constraint firstItem="lDT-v1-z2E" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hhv-Zb-oNg"/>
+                            <constraint firstAttribute="trailing" secondItem="f4W-Rk-Crg" secondAttribute="trailing" id="hsA-C1-cmi"/>
+                            <constraint firstItem="Yhm-yO-ysm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="iLy-JN-3QO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yhm-yO-ysm" secondAttribute="trailing" constant="-20" id="m7b-o3-b4L"/>
+                            <constraint firstItem="BDO-Xi-Kwr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="myt-5W-dBx"/>
+                            <constraint firstItem="BDO-Xi-Kwr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nCO-0c-196"/>
+                            <constraint firstItem="f4W-Rk-Crg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="s7i-6c-vm1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Yhm-yO-ysm" secondAttribute="bottom" id="t0R-3M-ILB"/>
+                            <constraint firstAttribute="trailing" secondItem="lDT-v1-z2E" secondAttribute="trailing" id="tdr-1s-nRS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Yhm-yO-ysm"/>
+                                <exclude reference="f4W-Rk-Crg"/>
+                                <exclude reference="BDO-Xi-Kwr"/>
+                                <exclude reference="lDT-v1-z2E"/>
+                                <exclude reference="0x5-zG-YHS"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="bmn-kv-7yE"/>
+                                <exclude reference="t0R-3M-ILB"/>
+                                <exclude reference="6Pl-6t-jB8"/>
+                                <exclude reference="MYi-UR-rGg"/>
+                                <exclude reference="5Vx-xB-rNF"/>
+                                <exclude reference="hhv-Zb-oNg"/>
+                                <exclude reference="tdr-1s-nRS"/>
+                                <exclude reference="hsA-C1-cmi"/>
+                                <exclude reference="s7i-6c-vm1"/>
+                                <exclude reference="myt-5W-dBx"/>
+                                <exclude reference="nCO-0c-196"/>
+                                <exclude reference="erv-Az-hAg"/>
+                                <exclude reference="iLy-JN-3QO"/>
+                                <exclude reference="m7b-o3-b4L"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Yhm-yO-ysm"/>
+                                <include reference="f4W-Rk-Crg"/>
+                                <include reference="BDO-Xi-Kwr"/>
+                                <include reference="lDT-v1-z2E"/>
+                                <include reference="0x5-zG-YHS"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="bmn-kv-7yE"/>
+                                <include reference="t0R-3M-ILB"/>
+                                <include reference="6Pl-6t-jB8"/>
+                                <include reference="MYi-UR-rGg"/>
+                                <include reference="5Vx-xB-rNF"/>
+                                <include reference="hhv-Zb-oNg"/>
+                                <include reference="tdr-1s-nRS"/>
+                                <include reference="hsA-C1-cmi"/>
+                                <include reference="s7i-6c-vm1"/>
+                                <include reference="myt-5W-dBx"/>
+                                <include reference="nCO-0c-196"/>
+                                <include reference="erv-Az-hAg"/>
+                                <include reference="iLy-JN-3QO"/>
+                                <include reference="m7b-o3-b4L"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="0x5-zG-YHS" id="mFg-ww-M4p"/>
+                        <outlet property="scannedDataTextView" destination="BDO-Xi-Kwr" id="IHQ-7y-Ogh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="213" y="297"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image" width="640" height="1136"/>
+    </resources>
+</document>

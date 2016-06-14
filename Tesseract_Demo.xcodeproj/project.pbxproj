@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		469BCECE1D1027B30058220B /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469BCECD1D1027B30058220B /* TesseractOCR.framework */; };
+		469BCED01D1027BE0058220B /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 469BCECF1D1027BE0058220B /* tessdata */; };
+		469BCED21D10281A0058220B /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 469BCED11D10281A0058220B /* libstdc++.tbd */; };
+		469BCED41D1028230058220B /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469BCED31D1028230058220B /* CoreImage.framework */; };
+		46DA9C571D10196C00ACE6F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA9C561D10196C00ACE6F5 /* AppDelegate.swift */; };
+		46DA9C591D10196C00ACE6F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA9C581D10196C00ACE6F5 /* ViewController.swift */; };
+		46DA9C5C1D10196C00ACE6F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46DA9C5A1D10196C00ACE6F5 /* Main.storyboard */; };
+		46DA9C5E1D10196D00ACE6F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46DA9C5D1D10196D00ACE6F5 /* Assets.xcassets */; };
+		46DA9C611D10196D00ACE6F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46DA9C5F1D10196D00ACE6F5 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		469BCECD1D1027B30058220B /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
+		469BCECF1D1027BE0058220B /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		469BCED11D10281A0058220B /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		469BCED31D1028230058220B /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		469BCED91D102EA70058220B /* Tesseract_Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tesseract_Demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		46DA9C531D10196C00ACE6F5 /* Tesseract_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tesseract_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46DA9C561D10196C00ACE6F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46DA9C581D10196C00ACE6F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		46DA9C5B1D10196C00ACE6F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46DA9C5D1D10196D00ACE6F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46DA9C601D10196D00ACE6F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46DA9C621D10196D00ACE6F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46DA9C501D10196C00ACE6F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				469BCED41D1028230058220B /* CoreImage.framework in Frameworks */,
+				469BCED21D10281A0058220B /* libstdc++.tbd in Frameworks */,
+				469BCECE1D1027B30058220B /* TesseractOCR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46DA9C4A1D10196B00ACE6F5 = {
+			isa = PBXGroup;
+			children = (
+				46DA9C551D10196C00ACE6F5 /* Tesseract_Demo */,
+				46DA9C541D10196C00ACE6F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46DA9C541D10196C00ACE6F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46DA9C531D10196C00ACE6F5 /* Tesseract_Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46DA9C551D10196C00ACE6F5 /* Tesseract_Demo */ = {
+			isa = PBXGroup;
+			children = (
+				46DA9C561D10196C00ACE6F5 /* AppDelegate.swift */,
+				46DA9C581D10196C00ACE6F5 /* ViewController.swift */,
+				46DA9C5A1D10196C00ACE6F5 /* Main.storyboard */,
+				46DA9C5D1D10196D00ACE6F5 /* Assets.xcassets */,
+				46DA9C5F1D10196D00ACE6F5 /* LaunchScreen.storyboard */,
+				46DA9C621D10196D00ACE6F5 /* Info.plist */,
+				469BCED91D102EA70058220B /* Tesseract_Demo-Bridging-Header.h */,
+				469BCECF1D1027BE0058220B /* tessdata */,
+				469BCED31D1028230058220B /* CoreImage.framework */,
+				469BCED11D10281A0058220B /* libstdc++.tbd */,
+				469BCECD1D1027B30058220B /* TesseractOCR.framework */,
+			);
+			path = Tesseract_Demo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46DA9C521D10196C00ACE6F5 /* Tesseract_Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46DA9C651D10196D00ACE6F5 /* Build configuration list for PBXNativeTarget "Tesseract_Demo" */;
+			buildPhases = (
+				46DA9C4F1D10196C00ACE6F5 /* Sources */,
+				46DA9C501D10196C00ACE6F5 /* Frameworks */,
+				46DA9C511D10196C00ACE6F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tesseract_Demo;
+			productName = Tesseract_Demo;
+			productReference = 46DA9C531D10196C00ACE6F5 /* Tesseract_Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46DA9C4B1D10196B00ACE6F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Abhishek Dwivedi";
+				TargetAttributes = {
+					46DA9C521D10196C00ACE6F5 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 46DA9C4E1D10196C00ACE6F5 /* Build configuration list for PBXProject "Tesseract_Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46DA9C4A1D10196B00ACE6F5;
+			productRefGroup = 46DA9C541D10196C00ACE6F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46DA9C521D10196C00ACE6F5 /* Tesseract_Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46DA9C511D10196C00ACE6F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46DA9C611D10196D00ACE6F5 /* LaunchScreen.storyboard in Resources */,
+				469BCED01D1027BE0058220B /* tessdata in Resources */,
+				46DA9C5E1D10196D00ACE6F5 /* Assets.xcassets in Resources */,
+				46DA9C5C1D10196C00ACE6F5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46DA9C4F1D10196C00ACE6F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46DA9C591D10196C00ACE6F5 /* ViewController.swift in Sources */,
+				46DA9C571D10196C00ACE6F5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		46DA9C5A1D10196C00ACE6F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46DA9C5B1D10196C00ACE6F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46DA9C5F1D10196D00ACE6F5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46DA9C601D10196D00ACE6F5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46DA9C631D10196D00ACE6F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46DA9C641D10196D00ACE6F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46DA9C661D10196D00ACE6F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tesseract_Demo",
+				);
+				INFOPLIST_FILE = Tesseract_Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AbhishekDwivedi.Tesseract-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Tesseract_Demo/Tesseract_Demo-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		46DA9C671D10196D00ACE6F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tesseract_Demo",
+				);
+				INFOPLIST_FILE = Tesseract_Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AbhishekDwivedi.Tesseract-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Tesseract_Demo/Tesseract_Demo-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46DA9C4E1D10196C00ACE6F5 /* Build configuration list for PBXProject "Tesseract_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46DA9C631D10196D00ACE6F5 /* Debug */,
+				46DA9C641D10196D00ACE6F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46DA9C651D10196D00ACE6F5 /* Build configuration list for PBXNativeTarget "Tesseract_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46DA9C661D10196D00ACE6F5 /* Debug */,
+				46DA9C671D10196D00ACE6F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46DA9C4B1D10196B00ACE6F5 /* Project object */;
+}
