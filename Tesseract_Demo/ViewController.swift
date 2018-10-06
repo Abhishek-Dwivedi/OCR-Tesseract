@@ -32,7 +32,7 @@ class ViewController: UIViewController,UITextViewDelegate,
             completion: nil)
     }
     
-    //Action for Camera
+    //Action for Camera button
     //Opens the camera and allows user to take a picture from the camera
     @IBAction func cameraTapped(sender: AnyObject) {
         
